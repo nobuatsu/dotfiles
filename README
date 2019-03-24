@@ -1,0 +1,6 @@
+dotfiles について
+
+~/dotfiles に配置 (~で、git clone する)
+lnDotfiles.sh を実行すると、~にシンボリックリンクを作る
+
+必要に応じて、手動で.gitconfig.local.sampleを参考に~/.gitconfig.localを作る
