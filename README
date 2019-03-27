@@ -1,6 +1,7 @@
 dotfiles について
 
 ~/dotfiles に配置 (~で、git clone する)
-lnDotfiles.sh を実行すると、~にシンボリックリンクを作る
+lnDotfiles.sh を実行すると、~にシンボリックリンクを作る（それなりに、既存のファイルをバックアップする）
+Windowsでは、mklinkDotfiles.batを実行するとシンボリックリンクを作る（設定によってはコマンドプロンプトを管理者として実行する必要あり、バックアップはしない）
 
 必要に応じて、手動で.gitconfig.local.sampleを参考に~/.gitconfig.localを作る
