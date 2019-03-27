@@ -32,3 +32,7 @@ alias ba='git branch -a'
 alias d='git diff'
 alias l='git log'
 alias s='git status'
+
+if [ -f /usr/local/bin/docker-compose ]; then
+  alias dc='sudo /usr/local/bin/docker-compose'
+fi
