@@ -41,6 +41,7 @@ alias ll='ls -al'
 alias b='git branch -v'
 alias ba='git branch -a -v'
 alias d='git diff'
+alias g='git grep'
 alias l='git log'
 alias s='git status'
 
