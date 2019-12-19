@@ -37,6 +37,7 @@ alias a='alias'
 alias h='history'
 alias la='ls -al'
 alias ll='ls -al'
+alias view='vi -R'
 
 alias b='git branch -v'
 alias ba='git branch -a -v'
