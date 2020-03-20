@@ -5,6 +5,11 @@ if [ -f /etc/bashrc ]; then
   . /etc/bashrc
 fi
 
+# 固有の設定が必要だったら、このファイルに書く。
+if [ -f ~/.bashrc.local ]; then
+  . ~/.bashrc.local
+fi
+
 if [ -f /usr/share/doc/git-1.7.1/contrib/completion/git-completion.bash ]; then
   . /usr/share/doc/git-1.7.1/contrib/completion/git-completion.bash
 fi
