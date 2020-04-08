@@ -6,6 +6,13 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # 固有の設定が必要だったら、このファイルに書く。
+if [ "$(uname -s)" == "Linux" ]; then
+  OS='Linux'
+elif [ "$(expr substr $(uname -s) 1 7)" == "MINGW64" ]; then
+  OS='MINGW'
+fi
+#echo "$OS"
+
 if [ -f ~/.bashrc.local ]; then
   . ~/.bashrc.local
 fi
@@ -63,4 +70,9 @@ alias s='git status'
 
 if [ -f /usr/local/bin/docker-compose ]; then
   alias dc='sudo /usr/local/bin/docker-compose'
+fi
+
+if [ "$OS" == "MINGW" ]; then
+  alias py='winpty py'
+  alias python='winpty python'
 fi
